@@ -6,7 +6,7 @@
 class CardGame
 
 
-  def checkforAce(card) # should be check_for_ace
+  def checkforAce(card) # should be self.check_for_ace
     if card.value = 1 # should be == otherwise you are assigning the value
       return true
     else
@@ -14,7 +14,7 @@ class CardGame
     end
   end
 
-  dif highest_card(card1 card2) # def is misspelt, also no comma between card1, card2
+  dif highest_card(card1 card2) # def is misspelt, also no comma between card1, card2 should be self.highest_card
   if card1.value > card2.value
     return card # should be card1
   else
@@ -24,10 +24,10 @@ end
 end # one end too many here
 
 def self.cards_total(cards)
-  total # total is unassigned
+  total # total is unassigned ie total = 0
   for card in cards
     total += card.value
     return "You have a total of" + total
-  end
-end # need another end
+  end # total.to_s
+end 
 ```
