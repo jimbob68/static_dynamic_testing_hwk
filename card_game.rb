@@ -8,14 +8,14 @@ class CardGame
   # def checkforAce(card)# should be snake case
 
   def self.check_for_ace(card)
-    if card.value = 1
+    if card.value == 1
       return true
     else
       return false
     end
   end
 
-  dif self.highest_card(card1, card2) # dif and comma
+  def self.highest_card(card1, card2) # dif and comma
       if card1.value > card2.value
         return card1 # card1
       else
